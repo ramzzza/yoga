@@ -1,0 +1,29 @@
+{
+  "name": "my-gulp-start",
+  "version": "1.0.0",
+  "description": "reutoff-gulp-start",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "reutoff",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-cssbeautify": "^1.0.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.2",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "panini": "^1.6.3"
+  },
+  "dependencies": {
+    "del": "^5.1.0"
+  }
+}
