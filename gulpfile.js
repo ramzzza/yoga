@@ -116,9 +116,9 @@ function images() {
 		.pipe(dest(path.build.images));
 }
 
-function clean() {
+/*function clean() {
 	return del(path.clean);
-}
+}*/
 
 function watchFiles() {
 	gulp.watch([path.watch.html], html);
@@ -127,7 +127,7 @@ function watchFiles() {
 	gulp.watch([path.watch.images], images);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images));
+const build = gulp.series( gulp.parallel(html, css, js, images));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
@@ -137,7 +137,7 @@ exports.html = html;
 exports.css = css;
 exports.js = js;
 exports.images = images;
-exports.clean = clean;
+// exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
