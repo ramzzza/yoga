@@ -14,4 +14,22 @@
 			transition: .3s			
 		&:hover:before
 			opacity: .8
+		&:after
+			position: absolute
+			content: ""
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			background-image: url(../img/magnifier.png)
+			background-position: center
+			background-repeat: no-repeat
+			width: 57px
+			height: 57px
+			background-color: #fff
+			border-radius: 50%
+			opacity: 0
+			transition: .3s
+		&:hover:after
+			opacity: 1
+			
 						

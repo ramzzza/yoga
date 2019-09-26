@@ -182,6 +182,25 @@
     transition: .3s; }
   .gallery__item:hover:before {
     opacity: .8; }
+  .gallery__item:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url(../img/magnifier.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 57px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s; }
+  .gallery__item:hover:after {
+    opacity: 1; }
 
 * {
   -webkit-box-sizing: border-box;
