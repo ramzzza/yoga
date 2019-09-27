@@ -1,15 +1,59 @@
 .about
-  &__left
-    max-width: 460px
-  &__title
-    padding-top: 25px
-    margin-bottom: 30px
-    color: #5b6ceb
-    font-size: 30px
-    font-weight: 700
-    line-height: 45px
-    text-transform: uppercase
-  &__text
-    color: #555555
-    font-size: 14px
-    line-height: 22px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+	&__left
+		max-width: 460px
+	&__title
+		margin-bottom: 30px
+		color: #5b6ceb
+		font-size: 30px
+		font-weight: 700
+		line-height: 45px
+		text-transform: uppercase
+	&__text
+		color: #555555
+		font-size: 14px
+		line-height: 22px
+.top-slider
+	max-width: 570px
+	min-height: 380px
+	// display: flex
+	// align-items: center
+	position: relative
+.slick
+	&-list
+		border-radius: 7px
+		// overflow: hidden
+
+	&-prev, &-next
+		position: absolute
+		z-index: 10
+		
+		width: 50px
+		height: 50px
+		border-radius: 50%
+	&-prev
+		// left: 12px
+		&::before
+			posa
+			display: block
+			content: ""
+			background-image: url(../img/slick_prev_arrow.svg)
+			background-repeat: no-repeat
+			width: 9px
+			height: 17px
+			right: 0
+			top: 0
+			transform: translate(-50%, -50%)
+	&-next
+		// right: 12px
+		&::before
+			display: block
+			content: ""
+			background-image: url(../img/slick_next_arrow.svg)
+			background-repeat: no-repeat
+			right: 50%
+			width: 9px
+			height: 17px
