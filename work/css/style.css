@@ -273,6 +273,64 @@
   .slick-next:before {
     background-image: url(../img/slick_next_arrow.svg); }
 
+.improvements {
+  background-image: url(../img/improvements_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 800px; }
+  .improvements__content {
+    padding: 125px 0 135px; }
+  .improvements__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 60px; }
+  .improvements__item {
+    max-width: 265px;
+    position: relative;
+    text-align: center;
+    color: #ffffff; }
+    .improvements__item-img_1::before, .improvements__item-img_2::before, .improvements__item-img_3::before, .improvements__item-img_4::before, .improvements__item-img_5::before, .improvements__item-img_6::before, .improvements__item-img_7::before, .improvements__item-img_8::before {
+      position: absolute;
+      content: "";
+      width: 70px;
+      height: 70px;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      display: block;
+      background-repeat: no-repeat; }
+    .improvements__item-img_1::before {
+      background-image: url(../img/improvements_1.png); }
+    .improvements__item-img_2::before {
+      background-image: url(../img/improvements_2.png); }
+    .improvements__item-img_3::before {
+      background-image: url(../img/improvements_3.png); }
+    .improvements__item-img_4::before {
+      background-image: url(../img/improvements_4.png); }
+    .improvements__item-img_5::before {
+      background-image: url(../img/improvements_5.png); }
+    .improvements__item-img_6::before {
+      background-image: url(../img/improvements_6.png); }
+    .improvements__item-img_7::before {
+      background-image: url(../img/improvements_7.png); }
+    .improvements__item-img_8::before {
+      background-image: url(../img/improvements_8.png); }
+  .improvements__title {
+    padding-top: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 25px; }
+  .improvements__text {
+    font-size: 16px;
+    line-height: 27px; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
